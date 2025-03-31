@@ -13,5 +13,6 @@ public class Lab1Practice {
         System.out.print("Enter Student's average mark: ");
         float mark = sc.nextFloat();
         System.out.println(name + " có điểm = " + mark);
+        sc.close();
     }
 }
