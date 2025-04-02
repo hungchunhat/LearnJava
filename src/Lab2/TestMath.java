@@ -6,5 +6,6 @@ public class TestMath {
         System.out.println(x++);
         System.out.println(x);
         System.out.println((double) x);
+        System.out.println((float) x);
     }
 }
