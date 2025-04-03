@@ -11,7 +11,7 @@ public class Ex1 {
             System.out.println("Phương trình vô nghiệm");
         }
         else{
-            System.out.printf("Nghiệm của hệ phương trình là: %.2f",(-b*1.0/a));
+            System.out.printf("Nghiệm của hệ phương trình là: %.2f",(float)-b/a);
         }
     }
     public static void main(String[] args) {
