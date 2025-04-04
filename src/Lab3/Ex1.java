@@ -9,6 +9,7 @@ public class Ex1 {
         System.out.print("Nhập vào một số bất kì: ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        sc.close();
         if(n < 0){
             System.out.println("Số của bạn bé hơn 0? Bạn có bị ngu không?");
             return;
