@@ -1,4 +1,4 @@
-package Lab2;
+package lab2;
 /*ax^2 + bx + c = 0
 * Nhập vào 3 số a,b và c
 * Tính toán nghiệm của phương trình*/

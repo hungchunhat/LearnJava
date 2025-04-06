@@ -1,10 +1,7 @@
-package Lab3;
+package lab3;
 
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ForLoop {
     public static void main(String[] args) {
