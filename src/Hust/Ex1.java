@@ -23,5 +23,6 @@ public class Ex1 {
         System.out.println(Arrays.toString(nums));
         randomSwap(nums);
         System.out.println(Arrays.toString(nums));
+
     }
 }
