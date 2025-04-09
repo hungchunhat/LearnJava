@@ -1,27 +1,26 @@
 package leetcode;
 
-import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class MinOperations {
-    public int findDistinct(int[] nums) {
-        int count = 0;
-        for (int i = 0; i < nums.length - 1; i++) {
-            if (nums[i] != nums[i + 1]) {
-                count++;
+    public int minOperations(int[] nums, int k) {
+        Set<Integer> set = new HashSet<>();
+        boolean check = false;
+        for (int num : nums) {
+            if (num < k) {
+                return -1;
+            } else if (num == k) {
+                check = true;
+                set.add(num);
+            } else {
+                set.add(num);
             }
         }
-        return count;
-    }
-    public int minOperations(int[] nums, int k) {
-        Arrays.sort(nums);
-        if(k > nums[0]){
-            return -1;
+        if(check){
+            return set.size()-1;
         }else{
-            if (k == nums[0]){
-                return findDistinct(nums);
-            }
-            else {
-                return findDistinct(nums) + 1;
-            }
+            return set.size();
         }
     }
     public static void main(String[] args) {
