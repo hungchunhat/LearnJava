@@ -46,7 +46,7 @@ public class TruongPhong extends NhanVien {
     }
 
     public static void main(String[] args) {
-        TruongPhong truongPhong = new TruongPhong("Hưng Thái", 100000, 1.25, 1000000, 20000, 20);
+        NhanVien truongPhong = new TruongPhong("Hưng Thái", 100000, 1.25, 1000000, 20000, 20);
         System.out.println(truongPhong);
     }
 }
