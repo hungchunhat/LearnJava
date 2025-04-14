@@ -39,12 +39,6 @@ public class TruongPhong extends NhanVien {
         return super.toString() + "\n--Số Năm Đương Chức: " + getSoNamDuongChuc()
                                 + "\n--Phụ Cấp: " + getPhuCap();
     }
-
-    @Override
-    public void inTTin() {
-        System.out.println(toString());
-    }
-
     public static void main(String[] args) {
         NhanVien truongPhong = new TruongPhong("Hưng Thái", 100000, 1.25, 1000000, 20000, 20);
         System.out.println(truongPhong);
